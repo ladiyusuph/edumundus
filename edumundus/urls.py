@@ -13,7 +13,8 @@ urlpatterns = [
         name="logout",
     ),
     path("courses/", include("courses.urls")),
-    path("students/", include("students.urls"))
+    path("students/", include("students.urls")),
+    path("__debug__/", include("debug_toolbar.urls")),
 ]
 
 if settings.DEBUG:
